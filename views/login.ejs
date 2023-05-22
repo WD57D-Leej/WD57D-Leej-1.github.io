@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+  <link rel="stylesheet" href="/site/stylesheets/emailcontact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="section">
+    <div>
+    <a class="navbar-brand" href="/"><img class="logo-small-image" src="site/images/logo-small.png" style="height: 70px;" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </div>
+   
+          <div class="container mt-5">
+            <h1>Login</h1>
+          
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+          
+                    <!-- Makes POST request to /login route -->
+                    <form action="/login" method="post">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" id="password" name="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </form>
+                      <p>Don't have an account? <a href="/register">Register</a></p>
+          
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+                      <i class="fab fa-google"></i>
+                      Sign In with Google
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div> 
+   </section>
+          <!-- footer here -->
+    <footer>
+  
+        <div class="copyrigth" href="/site/views/index.ejs">
+          <div class="bottom ">	&#169;Golden Brew Owner &#124; Web Developer</div>
+        </div>
+    </footer>
+    
+</body>
+</html>

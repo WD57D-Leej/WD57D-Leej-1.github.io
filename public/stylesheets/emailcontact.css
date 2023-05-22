@@ -1,0 +1,22 @@
+body {
+    background: #d8d5d5;
+}
+section {
+    height: 89vh;
+}
+.navbar-brand {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: -5%;
+}
+.logo-small-image {
+    border-radius: 3px;
+}
+footer{ 
+    text-align: center;
+    background: #404040;
+}
+.copyrigth{
+    color: rgb(255, 255, 255);
+    padding: 30px;
+}
